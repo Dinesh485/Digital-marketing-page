@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+body {
+  height: 2000px;
+}
+
+/*nav*/
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  background: url("./images/Endless-Constellation.svg");
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  top: 0;
+  padding: 5px 0;
+}
+
+nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 1500px;
+}
+
+nav .wrapper .logo {
+  width: 50px;
+}
+
+nav .wrapper .menu-btn {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+nav .wrapper .menu-btn span {
+  width: 90%;
+  height: 4px;
+  display: block;
+  border-radius: 3px;
+  background: white;
+  -webkit-transform-origin: -3%;
+          transform-origin: -3%;
+  -webkit-transition: opacity 300ms  linear, -webkit-transform 300ms linear;
+  transition: opacity 300ms  linear, -webkit-transform 300ms linear;
+  transition: transform 300ms linear, opacity 300ms  linear;
+  transition: transform 300ms linear, opacity 300ms  linear, -webkit-transform 300ms linear;
+}
+
+nav .wrapper .menu-btn .menu-btn-color-change {
+  background: black;
+}
+
+nav .wrapper .menu-btn-animation-1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+nav .wrapper .menu-btn-animation-2 {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+}
+
+nav .wrapper .menu-btn-animation-3 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+nav .wrapper .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: capitalize;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+nav .wrapper .menu li {
+  margin: 10px;
+}
+
+nav .wrapper .menu li a {
+  padding: 10px;
+  display: block;
+  color: black;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+nav .wrapper .menu li .demo-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#28affd), to(#e403d8));
+  background: linear-gradient(to right, #28affd, #e403d8);
+  border-radius: 35px;
+  padding: 20px 40px;
+  color: white;
+  font-size: 1.1em;
+}
+
+nav .wrapper .menu-animation {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+/*banner */
+.banner {
+  background: url("./images/Endless-Constellation.svg");
+  color: white;
+  padding: 30px 0;
+  position: relative;
+  z-index: -10;
+}
+
+.banner .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banner .banner-content .title {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.7em;
+  color: #28affd;
+}
+
+.banner .banner-content .caption {
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 0.9;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.banner .banner-content .description {
+  font-size: 0.9em;
+  color: #cccccc;
+}
+
+.banner .banner-content .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0;
+}
+
+.banner .banner-content .links .demo-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#28affd), to(#e403d8));
+  background: linear-gradient(to right, #28affd, #e403d8);
+  border-radius: 35px;
+  padding: 15px 30px;
+  color: white;
+  text-transform: capitalize;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.banner .banner-content .links .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 10px;
+}
+
+.banner .banner-content .links .video .play-btn {
+  padding: 20px;
+  border-radius: 50%;
+  background: rgba(92, 92, 92, 0.637);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .banner-content .links .video .play-btn img {
+  width: 15px;
+}
+
+.banner .banner-content .links .video span {
+  margin-left: 20px;
+  font-size: 0.9em;
+}
+
+.banner .banner-img img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.banner .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.banner .wave svg {
+  position: relative;
+  display: block;
+  width: calc(135% + 1.3px);
+  height: 86px;
+}
+
+.banner .wave .shape-fill {
+  fill: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .banner .wave svg {
+    width: calc(150% + 1.3px);
+    height: 36px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  nav .wrapper .menu-btn {
+    display: none;
+  }
+  nav .wrapper .menu {
+    position: static;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform: none;
+            transform: none;
+    background: none;
+  }
+  nav .wrapper .menu li {
+    margin: 0 10px;
+  }
+  nav .wrapper .menu li a {
+    padding: 0;
+    font-size: 0.8em;
+    color: white;
+    font-weight: normal;
+  }
+  nav .wrapper .menu li .demo-btn {
+    font-size: 0.8em;
+    padding: 10px 15px;
+  }
+  .banner {
+    padding-top: 50px;
+  }
+  .banner .banner-img {
+    width: 70%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .banner .banner-content {
+    width: 70%;
+  }
+  .banner .banner-content .links .demo-btn {
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    padding-bottom: 50px;
+  }
+  .banner .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner .wrapper .banner-img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .banner .wrapper .banner-content {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .banner .wrapper .banner-content .caption {
+    font-size: 3em;
+  }
+  .banner .wrapper .banner-content .description {
+    width: 70%;
+  }
+  .banner .wrapper .banner-content .links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .banner .wrapper .banner-content .links .video {
+    font-size: 0.8em;
+    margin-left: 30px;
+  }
+  .banner .wrapper .banner-content .links .video .play-btn {
+    padding: 20px;
+  }
+  .banner .wrapper .banner-content .links .video .play-btn img {
+    width: 10px;
+  }
+  .banner .wrapper .banner-content .demo-btn {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+  nav .wrapper .menu li {
+    margin: 0 20px;
+  }
+  .banner {
+    padding: 80px 0;
+  }
+  .banner .wrapper .banner-content .title {
+    font-size: 2em;
+  }
+  .banner .wrapper .banner-content .caption {
+    font-size: 4em;
+    margin: 10px 0 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+  .banner .wrapper .banner-content .caption {
+    margin-bottom: 80px;
+  }
+  .banner .wrapper .banner-content .demo-btn {
+    padding: 20px 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
